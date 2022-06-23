@@ -22,6 +22,9 @@ ingress:
 hub:
   existingSecret: hub-config-prod # name of the k8s secret
 singleuser:
+  image:
+    name: pangeo/pangeo-notebook
+    tag: latest
   defaultUrl: "/lab"
   extraEnv:
     JUPYTERHUB_SINGLEUSER_APP: "jupyter_server.serverapp.ServerApp"
