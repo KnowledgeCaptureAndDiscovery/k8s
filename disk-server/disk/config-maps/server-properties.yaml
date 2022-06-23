@@ -1,0 +1,56 @@
+kind: ConfigMap 
+apiVersion: v1 
+metadata:
+  name: server-properties
+data:
+  server.properties: | 
+    {
+        server = http://localhost:8080/disk-server;
+        storage = 
+        {
+            local = /root/disk/storage;
+            tdb = /root/disk/storage/TDB;
+            db = /root/disk/storage/DB;
+        }
+        keycloak =
+        {
+            url = https://auth.mint.isi.edu;
+            realm = production;
+        }
+        data-adapters = 
+        {
+            Wiki = 
+            {
+                type = sparql;
+                endpoint = https://endpoint.mint.isi.edu/tutorial;
+                username = admin;
+                password = admin;
+            }
+        }
+        method-adapters =
+        {
+            wings =
+            {
+                type = wings;
+                endpoint = http://localhost:7080/wings-portal;
+                username = admin;
+                password = 4dm1n!23;
+                internal_server = http://wings:8080/wings-portal;
+                domain = test;
+            }
+        }
+        question-templates =
+        {
+            bikes = https://raw.githubusercontent.com/KnowledgeCaptureAndDiscovery/QuestionOntology/main/examples/bike_rent.xml;
+            climate = https://raw.githubusercontent.com/KnowledgeCaptureAndDiscovery/QuestionOntology/main/examples/hypothesisQuestions.xml;
+        }
+        vocabularies =
+        {
+            disk-hypothesis =
+            {
+                url = https://knowledgecaptureanddiscovery.github.io/DISK-Ontologies/hypothesis/release/0.0.2/ontology.owl;
+                prefix = hyp;
+                namespace = http://disk-project.org/ontology/hypothesis#;
+            }
+        }
+    }
