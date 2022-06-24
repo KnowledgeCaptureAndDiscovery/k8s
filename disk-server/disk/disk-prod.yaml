@@ -36,11 +36,11 @@ spec:
     spec:
       containers:
         - name: disk-prod
-          image: ikcap/disk_frontend_react
+          image: frontend-image-prod
           ports:
             - containerPort: 80
         - name: backend
-          image: ikcap/disk_backend
+          image: backend-image-prod
           ports:
             - containerPort: 8080
           volumeMounts:
