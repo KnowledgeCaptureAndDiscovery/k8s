@@ -3,6 +3,6 @@ kind: Kustomization
 images:
 - name: demo-cd
   newName: ikcap/demo-cd
-  newTag: 47a31150c26f8d938fa60f3ed66f8178eeb90dfa
+  newTag: 4cba1f02c796d611e19d6bce3fa3c74703534e86
 resources:
 - deployment.yaml
