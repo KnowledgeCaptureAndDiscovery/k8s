@@ -5,3 +5,4 @@ resources:
 images:
 - name: demo-cd
   newName: ikcap/demo-cd
+  newTag: b4c30f14755d95f8e2fe7911f0eaeb233cc8c371
