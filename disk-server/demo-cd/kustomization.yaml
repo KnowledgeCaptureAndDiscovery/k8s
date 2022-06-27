@@ -5,6 +5,6 @@ images:
   newName: ikcap/demo-cd
   newTag: 4cba1f02c796d611e19d6bce3fa3c74703534e86
 - name: ikcap/demo-cd
-  newTag: e520aeacaa64913000fb085f6b2ab08759ef0803
+  newTag: b5d205bcc943340af3ab39f7972e71f5b864e32b
 resources:
 - deployment.yaml
