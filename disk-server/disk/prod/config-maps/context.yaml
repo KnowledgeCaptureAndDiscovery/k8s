@@ -1,0 +1,9 @@
+kind: ConfigMap 
+apiVersion: v1 
+metadata:
+  name: context
+data:
+  context.xml: |
+    <Context docBase="webapps/manager"<Context antiResourceLocking="false" privileged="true" >
+      <Manager sessionAttributeValueClassNameFilter="java\.lang\.(?:Boolean|Integer|Long|Number|String)|org\.apache\.catalina\.filters\.CsrfPreventionFilter\$LruCache(?:\$1)?|java\.util\.(?:Linked)?HashMap"/>     
+    </Context>
