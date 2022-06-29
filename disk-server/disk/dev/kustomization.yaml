@@ -5,9 +5,9 @@ resources:
 - deployment.yaml
 namespace: default
 images:
-- name: backend-image-prod
+- name: backend-image-dev
   newName: ikcap/disk_backend
-  newTag: latest 
-- name: frontend-image-prod
+  newTag: 489c2209df43d1007e72571d5fe4ac10340ea0c7 
+- name: frontend-image-dev
   newName: ikcap/disk_frontend
-  newTag: latest 
+  newTag: 122e5c8a90c88a64db96e915e385b4955fb2710c 
