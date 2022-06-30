@@ -7,7 +7,7 @@ namespace: default
 images:
 - name: backend-image-prod
   newName: ikcap/disk_backend
-  newTag: 7b53f5ea66362520f499bae708a6a7cef1c0b5db
+  newTag: 7855cc6d053a8f59eb9b3875b19f2b2cbfa24aec
 - name: frontend-image-prod
   newName: ikcap/disk_frontend
   newTag: 8e259746a26a14de26a93abbe4648a0039e92c16
