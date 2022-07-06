@@ -1,3 +1,5 @@
+disk-server/disk/dev/config-maps/
+disk-server/disk/prod/config-maps/
 learning
 .vscode
 secret.yaml
