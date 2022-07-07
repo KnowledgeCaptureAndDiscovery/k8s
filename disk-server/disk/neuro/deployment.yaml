@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: disk-frontend-prod
+  name: disk-frontend-neuro-prod
 spec:
   ports:
     - port: 80
       targetPort: 80
   selector:
-    app: disk-prod
+    app: disk-neuro-prod
 ---
 apiVersion: v1
 kind: Service
@@ -18,24 +18,24 @@ spec:
     - port: 80
       targetPort: 8080
   selector:
-    app: disk-prod
+    app: disk-neuro-prod
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: disk-prod
+  name: disk-neuro-prod
 spec:
   selector:
     matchLabels:
-      app: disk-prod
+      app: disk-neuro-prod
   replicas: 1
   template:
     metadata:
       labels:
-        app: disk-prod
+        app: disk-neuro-prod
     spec:
       containers:
-        - name: disk-prod
+        - name: disk-neuro-prod
           image: frontend-image-prod
           ports:
             - containerPort: 80
@@ -49,29 +49,29 @@ spec:
       volumes:
         - name: server-properties
           configMap:
-            name: server-properties 
+            name: neuro-server-properties 
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: disk-frontend-prod-ingress
+  name: disk-frontend-neuro-prod-ingress
   annotations:
     kubernetes.io/ingress.class: public
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
 spec:
   tls:
     - hosts:
-      - disk.isi.edu
-      secretName: disk-frontend-prod-tls
+      - neuro.disk.isi.edu
+      secretName: disk-frontend-neuro-prod-tls
   rules:
-    - host: disk.isi.edu
+    - host: neuro.disk.isi.edu
       http:
         paths:
           - pathType: Prefix
             path: "/"
             backend:
               service:
-                name: disk-frontend-prod 
+                name: disk-frontend-neuro-prod 
                 port:
                   number: 80
           - pathType: Prefix
