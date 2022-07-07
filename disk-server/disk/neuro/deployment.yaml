@@ -61,10 +61,10 @@ metadata:
 spec:
   tls:
     - hosts:
-      - neuro.disk.isi.edu
+      - neuro.disk.mosorio.dev
       secretName: disk-frontend-neuro-prod-tls
   rules:
-    - host: neuro.disk.isi.edu
+    - host: neuro.disk.mosorio.dev
       http:
         paths:
           - pathType: Prefix

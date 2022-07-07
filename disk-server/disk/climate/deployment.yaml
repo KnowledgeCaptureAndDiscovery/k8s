@@ -61,10 +61,10 @@ metadata:
 spec:
   tls:
     - hosts:
-      - climate.disk.isi.edu
+      - climate.disk.mosorio.dev
       secretName: disk-frontend-climate-prod-tls
   rules:
-    - host: climate.disk.isi.edu
+    - host: climate.disk.mosorio.dev
       http:
         paths:
           - pathType: Prefix
