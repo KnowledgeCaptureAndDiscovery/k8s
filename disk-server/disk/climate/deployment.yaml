@@ -12,7 +12,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: disk-backend-prod
+  name: disk-backend-climate-prod
 spec:
   ports:
     - port: 80
@@ -78,6 +78,6 @@ spec:
             path: "/disk-server"
             backend:
               service:
-                name: disk-backend-prod 
+                name: disk-backend-climate-prod 
                 port:
                   number: 80
