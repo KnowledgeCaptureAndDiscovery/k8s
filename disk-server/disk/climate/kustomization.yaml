@@ -9,5 +9,5 @@ images:
   newName: ikcap/disk_backend
   newTag: cd3ccdc3b6eb3a36e4ab413be317622a8cb7151d
 - name: frontend-image-prod
-  newName: ikcap/disk_frontend_climate
-  newTag:  f6ede31fd208f3dfe1f6ac0b74b28792c52b0545
+  newName: ikcap/disk_frontend
+  newTag: ffbba8df8c240601b2fb27405222edcbe6e3c3e4
