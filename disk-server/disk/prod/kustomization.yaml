@@ -10,4 +10,4 @@ images:
   newTag: 7039e9089b2f0f5062217d161b43367466c9c4c2
 - name: frontend-image-prod
   newName: ikcap/disk_frontend
-  newTag: 7a93f489b22b2c975cd97a81548e9a5cbdf32666
+  newTag: de88dbfdf82fdc20dd05bc53ece8679e2bcc8e4c
