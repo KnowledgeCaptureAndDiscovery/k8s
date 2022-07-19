@@ -10,4 +10,4 @@ images:
   newTag: 7039e9089b2f0f5062217d161b43367466c9c4c2
 - name: frontend-image-prod
   newName: ikcap/disk_frontend_neuro
-  newTag: 84126d185e62a034ae1d1ee83093c79bf146eda8
+  newTag: 9797893d3521425a26be23c9937c7e9d724f2933
