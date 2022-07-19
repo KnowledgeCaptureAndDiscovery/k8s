@@ -19,26 +19,10 @@ data:
         }
         data-adapters = 
         {
-            Linked_Earth = 
-            {
-                type = sparql;
-                endpoint = https://wiki.linked.earth/store/ds;
-                username = admin;
-                password = 4dm1n!23;
-                namespace = http://wiki.linked.earth/Special:URIResolver/;
-                prefix = wiki;
-            }
-            Example = 
+            Bikes-rental = 
             {
                 type = sparql;
                 endpoint = https://endpoint.mint.isi.edu/tutorial;
-            }
-            Enigma = 
-            {
-                type = sparql;
-                endpoint = https://endpoint.mint.isi.edu/enigma_dev;
-                namespace = http://localhost:8080/enigma_dev/Special:URIResolver/;
-                prefix = enigma;
             }
         }
         method-adapters =
@@ -52,38 +36,10 @@ data:
                 internal_server = https://wings.disk.isi.edu/wings-portal;
                 domain = bikes;
             }
-            wings =
-            {
-                type = wings;
-                endpoint = https://wings.disk.isi.edu/wings-portal;
-                username = admin;
-                password = 4dm1n!23;
-                internal_server = https://wings.disk.isi.edu/wings-portal;
-                domain = test;
-            }
-            New_Enigma =
-            {
-                type = wings;
-                endpoint = https://wings.disk.isi.edu/wings-portal;
-                username = admin;
-                password = 4dm1n!23;
-                internal_server = http://localhost:8080/wings-portal;
-                domain = Enigma;
-            }
-            Old_Enigma = {
-                type = wings;
-                endpoint = https://enigma-disk.wings.isi.edu/wings-portal;
-                username = admin;
-                password = 4dm1n!23;
-                internal_server = http://skc.isi.edu:8080/wings-portal;
-                domain = test;
-            }
         }
         question-templates =
         {
             bikes = https://raw.githubusercontent.com/KnowledgeCaptureAndDiscovery/QuestionOntology/main/examples/bike_rent.xml;
-            climate = https://raw.githubusercontent.com/KnowledgeCaptureAndDiscovery/QuestionOntology/main/examples/hypothesisQuestions.xml;
-            enigma = https://raw.githubusercontent.com/KnowledgeCaptureAndDiscovery/QuestionOntology/main/development/EnigmaQuestions.xml;
         }
         vocabularies =
         {
@@ -92,11 +48,7 @@ data:
                 url = https://knowledgecaptureanddiscovery.github.io/DISK-Ontologies/hypothesis/release/0.0.2/ontology.owl;
                 prefix = hyp;
                 namespace = http://disk-project.org/ontology/hypothesis#;
-            }
-            neuro = {
-                url = https://knowledgecaptureanddiscovery.github.io/DISK-Ontologies/enigma_hypothesis/release/2.0.1/ontology.ttl;
-                prefix = neuro;
-                namespace = https://w3id.org/disk/ontology/enigma_hypothesis#;
+                description = "The DISK Hypothesis Ontology. Defines properties to be used on Hypothesis creation.";
             }
         }
     }

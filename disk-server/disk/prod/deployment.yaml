@@ -46,10 +46,16 @@ spec:
           volumeMounts:
             - name: server-properties
               mountPath: /root/.disk/
+            - name: data
+              mountPath: /root/disk/
       volumes:
         - name: server-properties
           configMap:
             name: server-properties 
+        - name: data
+          persistentVolumeClaim:
+            claimName: wings-prod-pv-claim
+        
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
