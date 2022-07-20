@@ -10,4 +10,4 @@ images:
   newTag: 4a14ece73f178450f0d85256bcb11e04157a72c7
 - name: frontend-image-prod
   newName: ikcap/disk_frontend_climate
-  newTag: 004687ce5450b05bd17891f92f8303a809c7dc90
+  newTag: 707e25b69be02044938f7e7ddd232b4cf0477826
