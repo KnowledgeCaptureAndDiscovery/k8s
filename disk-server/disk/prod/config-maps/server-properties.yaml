@@ -47,6 +47,7 @@ data:
             {
                 url = https://knowledgecaptureanddiscovery.github.io/DISK-Ontologies/hypothesis/release/0.0.2/ontology.owl;
                 prefix = hyp;
+                title = "DISK Hypothesis";
                 namespace = http://disk-project.org/ontology/hypothesis#;
                 description = "The DISK Hypothesis Ontology. Defines properties to be used on Hypothesis creation.";
             }
